@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Letterboxd Patreon",
+    "version": "1.0",
+    "description": "Replace posters with chosen ones",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://letterboxd.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
