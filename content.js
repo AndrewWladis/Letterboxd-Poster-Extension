@@ -17,6 +17,7 @@ let imageSources = {
   'Dune': 'https://cdn.printerval.com/unsafe/960x960/asset.prtvstatic.com/2023/08/30/18-6e2288e910471659e21fc867b2cdaa1b.jpg',
   "Zack Snyder's Justice League": 'https://m.media-amazon.com/images/M/MV5BZjczOGNhNWItYThhOS00Mzg0LWI2MjQtM2EzZmVjOWJiOTNmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
   'The Suicide Squad': 'https://m.media-amazon.com/images/M/MV5BMWU3Y2NlZmEtMjJjNS00ZWMxLWE1MzctYWYyMjMzMDdkNTE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
+  'The Flash': 'https://i.pinimg.com/736x/98/4c/9a/984c9ac8905ea8c230482c4b201e6647.jpg',
   '': '',
   '': '',
   '': '',
@@ -26,6 +27,7 @@ let imageSources = {
   '': '',
   '': '',
   '': '',
+  '': ''
 };
 
 function replaceImages() {
@@ -43,10 +45,10 @@ function replaceImages() {
   });
 }
 
-// Use `load` instead of `DOMContentLoaded`
 window.addEventListener('load', replaceImages);
 
 // Also try running it again after 1 second in case of delays
+setTimeout(replaceImages, 50);
 setTimeout(replaceImages, 100);
 setTimeout(replaceImages, 250);
 setTimeout(replaceImages, 500);
