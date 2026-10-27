@@ -23,12 +23,16 @@ A Chrome extension that allows you to replace the poster image for a specific mo
 ## Usage
 
 1. Click the extension icon to open the popup 
-2. Enter the full Letterboxd URL for the movie whose poster you want to replace
+2. Enter the movie title and four-digit year exactly as they appear in the poster's
+   Letterboxd `alt` text (for example, `Superman` and `2025` for
+   `Poster for Superman (2025)`)
 3. Enter the full URL for the custom poster image you want to use
-4. Click "Save"
+4. Click "Change Poster"
 5. Navigate to the Letterboxd page for that movie and the poster will be replaced with your custom image
+
+Poster choices entered in the popup are saved in the extension's local storage and take
+precedence over matching entries in `posters.json`.
 
 ## Compatibility
 
 This extension is compatible with Google Chrome browsers. It may work in other Chromium-based browsers like the new Microsoft Edge, but this has not been fully tested.
-

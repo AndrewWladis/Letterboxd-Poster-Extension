@@ -3,13 +3,16 @@
   "name": "Letterboxd Custom Posters",
   "version": "1.0",
   "description": "Replace posters with chosen ones",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {
       "matches": ["https://letterboxd.com/*"],
       "js": ["content.js"]
     }
   ],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "web_accessible_resources": [
     {
       "resources": ["posters.json"],
